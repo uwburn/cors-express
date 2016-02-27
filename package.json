@@ -1,0 +1,12 @@
+{
+  "name": "cors",
+  "version": "0.0.1",
+  "main": "cors.js",
+  "repository": {
+    "type": "git",
+    "url" : "git://192.168.1.10/cors.git"
+  },
+  "dependencies": {
+    "http-error": "git://192.168.1.10/cors.git"
+  }
+}
