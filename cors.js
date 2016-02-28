@@ -34,7 +34,7 @@ module.exports = function(options) {
 
 		var method = req.headers['access-control-request-method'];
 		if (method)
-			res.headers('access-control-request-methods', method);
+			res.header('access-control-request-methods', method);
 
 		if (req.method === "OPTIONS")
 			res.end();
