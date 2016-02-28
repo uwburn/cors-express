@@ -26,7 +26,7 @@ module.exports = function(options) {
 		}
 
 		if (options.allowCredentials)
-			res.header('access-controll-allow-credentials', 'true');
+			res.header('access-control-allow-credentials', 'true');
 
 		var headers = req.headers['access-control-request-headers'];
 		if (headers)
