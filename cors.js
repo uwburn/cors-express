@@ -1,8 +1,15 @@
 module.exports = function(options) {
 	var options = options || {};
-	options.allowWithoutOrigin = options.allowWithoutOrigin || true;
-	options.onlyAllowedOrigin = options.onlyAllowedOrigin || true;
-	options.allowCredentials = options.allowCredentials || true;
+
+	if (options.allowWithoutOrigin === undefined)
+		options.allowWithoutOrigin = true;
+
+	if (options.onlyAllowedOrigin === undefined)
+		options.onlyAllowedOrigin = true;
+
+	if (options.allowCredentials === undefined)
+		options.allowCredentials = true;
+
 	options.allowedOrigins = options.allowedOrigins || [];
 	options.nullOrigin = options.nullOrigin || 'null';
 
